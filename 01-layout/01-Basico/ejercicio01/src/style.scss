@@ -1,0 +1,63 @@
+%containers {
+    width: min(800px, 100%);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+%boxes {
+    padding: 30px 10px 30px 10px;
+    border-radius: 5px; 
+    margin-right: 5px;
+}
+
+@function darken-color($color, $percen) {
+    @return darken($color, $percen);
+}
+
+@function lighten-color($color, $percen) {
+    @return lighten($color, $percen);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.base-color {
+        span.color-box-text{
+            color: white;
+        }  
+    } 
+    
+    @for $c from 1 through 3 {
+        $basecolor: white;
+        @if $c == 1 {
+            $basecolor: rgb(250, 67, 67);
+        } @else if $c == 2 {
+            $basecolor: rgb(53, 53, 245);
+        } @else if $c == 3 {
+            $basecolor: rgb(43, 158, 43);
+        }
+        div.container-#{$c} {
+            @extend %containers;
+            div.box {
+                @extend %boxes;
+                background-color: $basecolor;
+            }
+
+            @for $i from 1 through 4 {
+                div.darken-#{$i} {
+                    color: invert(darken_color($basecolor, 5% * $i));
+                    background-color: darken_color($basecolor, 5% * $i);    
+                }
+                div.lighten-#{$i} {
+                    color: invert(lighten_color($basecolor, 5% * $i));
+                    background-color: lighten_color($basecolor, 5% * $i);    
+                }
+
+            }
+            
+        }
+
+    }
+}

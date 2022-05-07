@@ -1,0 +1,36 @@
+:root {
+    --blanco: white;
+    --principalColor: rgb(22, 125, 143);
+    --secondaryColor: rgb(14, 54, 61);
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 1rem;
+}
+
+.bar {
+    background-color: var(--principalColor);
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+@media screen and (min-width: 670px) { 
+    .bar{
+      flex-direction: row;
+      justify-content: space-between;/*para alinear en rows*/
+    }
+}
+
+.bar a {
+    text-decoration: none;
+    color: var(--blanco);
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
+
+.bar a:hover {
+    background-color: var(--secondaryColor);
+}

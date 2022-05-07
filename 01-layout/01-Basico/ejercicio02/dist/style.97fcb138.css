@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  margin: 5px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: "Comfortaa", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box {
+  background-color: red;
+  border-radius: 0px;
+  width: 120px;
+  height: 90px;
+  padding: 15px 0 0 15px;
+  box-sizing: border-box;
+  border: solid 1px;
+}
+
+div.box-2 {
+  background-color: maroon;
+}
+
+div.box-3 {
+  background-color: #ffb3b3;
+}
+
+div.box-4 p:first-child {
+  font-family: "Open Sans", sans-serif;
+}
+
+div.box-4 p:last-child {
+  font-family: "DM Sans", sans-serif;
+}
+
+div.box-5 {
+  background-color: white;
+  box-shadow: -10px 10px 15px black;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */

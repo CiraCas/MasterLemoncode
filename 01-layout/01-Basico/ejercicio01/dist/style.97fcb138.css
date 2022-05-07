@@ -1,0 +1,128 @@
+body div.container-3, body div.container-2, body div.container-1 {
+  width: min(800px, 100%);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+body div.container-3 div.box, body div.container-2 div.box, body div.container-1 div.box {
+  padding: 30px 10px 30px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body div.base-color span.color-box-text {
+  color: white;
+}
+body div.container-1 div.box {
+  background-color: rgb(250, 67, 67);
+}
+body div.container-1 div.darken-1 {
+  color: #06d5d5;
+  background-color: #f92a2a;
+}
+body div.container-1 div.lighten-1 {
+  color: #04a3a3;
+  background-color: #fb5c5c;
+}
+body div.container-1 div.darken-2 {
+  color: #06eeee;
+  background-color: #f91111;
+}
+body div.container-1 div.lighten-2 {
+  color: #048a8a;
+  background-color: #fb7575;
+}
+body div.container-1 div.darken-3 {
+  color: #15f9f9;
+  background-color: #ea0606;
+}
+body div.container-1 div.lighten-3 {
+  color: #037171;
+  background-color: #fc8e8e;
+}
+body div.container-1 div.darken-4 {
+  color: #2ef9f9;
+  background-color: #d10606;
+}
+body div.container-1 div.lighten-4 {
+  color: #025959;
+  background-color: #fda6a6;
+}
+body div.container-2 div.box {
+  background-color: rgb(53, 53, 245);
+}
+body div.container-2 div.darken-1 {
+  color: #e2e20b;
+  background-color: #1d1df4;
+}
+body div.container-2 div.lighten-1 {
+  color: #b2b209;
+  background-color: #4d4df6;
+}
+body div.container-2 div.darken-2 {
+  color: #f3f314;
+  background-color: #0c0ceb;
+}
+body div.container-2 div.lighten-2 {
+  color: #999908;
+  background-color: #6666f7;
+}
+body div.container-2 div.darken-3 {
+  color: #f5f52c;
+  background-color: #0a0ad3;
+}
+body div.container-2 div.lighten-3 {
+  color: #818106;
+  background-color: #7e7ef9;
+}
+body div.container-2 div.darken-4 {
+  color: #f6f644;
+  background-color: #0909bb;
+}
+body div.container-2 div.lighten-4 {
+  color: #696905;
+  background-color: #9696fa;
+}
+body div.container-3 div.box {
+  background-color: rgb(43, 158, 43);
+}
+body div.container-3 div.darken-1 {
+  color: #d975d9;
+  background-color: #268a26;
+}
+body div.container-3 div.lighten-1 {
+  color: #cf4dcf;
+  background-color: #30b230;
+}
+body div.container-3 div.darken-2 {
+  color: #df89df;
+  background-color: #207620;
+}
+body div.container-3 div.lighten-2 {
+  color: #c939c9;
+  background-color: #36c636;
+}
+body div.container-3 div.darken-3 {
+  color: #e49de4;
+  background-color: #1b621b;
+}
+body div.container-3 div.lighten-3 {
+  color: #b732b7;
+  background-color: #48cd48;
+}
+body div.container-3 div.darken-4 {
+  color: #eab1ea;
+  background-color: #154e15;
+}
+body div.container-3 div.lighten-4 {
+  color: #a32ca3;
+  background-color: #5cd35c;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
