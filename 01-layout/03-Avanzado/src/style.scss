@@ -1,0 +1,119 @@
+$white: whitesmoke;
+$colorBase: #141414;
+%sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .item {
+        flex-grow: 1;
+        width: 250px;
+        min-width: 250px;
+        max-width: 50%;
+        transition: all 0.5s;
+        img{
+            width: 100%;
+            height: auto
+        }
+        &:hover{
+            flex-grow: 5;
+        }
+    }
+
+}
+html {
+    background-color: $colorBase;
+    font-family: 'Jost', sans-serif;
+    color: $white;
+    header {
+        background-color: $colorBase;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+        .header-logo {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            
+            .platform-title {
+                display: none;
+            }
+            @media only screen and (min-width: 1280px){
+                .platform-title {
+                    display: block;
+                    font-size: 30px;
+                }
+
+            }
+        }
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            div {
+                padding: 20px 1.5vw;
+                border-radius: 5px; 
+            }
+            div:hover {
+                background-color: $white;
+                color: blue;
+            }
+        }
+    }
+    main {
+        font-size: 20px;
+        padding: 1.5rem;
+        #top-text::after {
+            content: "3";
+            font-weight: bold;
+            @media only screen and (min-width: 1280px) {
+                content: "5";
+            }
+        }
+        .top {
+           display: flex;
+           flex-direction: row-reverse;
+           flex-wrap: wrap-reverse;
+           justify-content: center;
+           
+           @media only screen and (min-width: 1279px) {
+                flex-wrap: nowrap;
+            }
+
+           :nth-child(2){
+                display: none;
+                @media only screen and (min-width: 1280px) {
+                    display: block;
+                }
+            }
+           
+          
+           .top-item {
+               &:first-of-type{
+                   display: none;
+                   @media only screen and (min-width: 1280px) {
+                    display: block;
+                    }
+               }
+               flex: 1;
+               min-width: 225px;
+               img{
+                width: 100%;
+                height: auto
+               }
+           }
+          
+        }
+        .first {
+            @extend %sections;
+        }
+        .second {
+            @extend %sections;
+        }
+            
+        
+    }
+}

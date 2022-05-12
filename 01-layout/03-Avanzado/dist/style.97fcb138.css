@@ -1,0 +1,111 @@
+html main .second, html main .first {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+html main .second .item, html main .first .item {
+  flex-grow: 1;
+  width: 250px;
+  min-width: 250px;
+  max-width: 50%;
+  transition: all 0.5s;
+}
+html main .second .item img, html main .first .item img {
+  width: 100%;
+  height: auto;
+}
+html main .second .item:hover, html main .first .item:hover {
+  flex-grow: 5;
+}
+
+html {
+  background-color: #141414;
+  font-family: "Jost", sans-serif;
+  color: whitesmoke;
+}
+html header {
+  background-color: #141414;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+html header .header-logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+html header .header-logo .platform-title {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  html header .header-logo .platform-title {
+    display: block;
+    font-size: 30px;
+  }
+}
+html header .header-buttons {
+  display: flex;
+  align-items: center;
+}
+html header .header-buttons div {
+  padding: 20px 1.5vw;
+  border-radius: 5px;
+}
+html header .header-buttons div:hover {
+  background-color: whitesmoke;
+  color: blue;
+}
+html main {
+  font-size: 20px;
+  padding: 1.5rem;
+}
+html main #top-text::after {
+  content: "3";
+  font-weight: bold;
+}
+@media only screen and (min-width: 1280px) {
+  html main #top-text::after {
+    content: "5";
+  }
+}
+html main .top {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+@media only screen and (min-width: 1279px) {
+  html main .top {
+    flex-wrap: nowrap;
+  }
+}
+html main .top :nth-child(2) {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  html main .top :nth-child(2) {
+    display: block;
+  }
+}
+html main .top .top-item {
+  flex: 1;
+  min-width: 225px;
+}
+html main .top .top-item:first-of-type {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  html main .top .top-item:first-of-type {
+    display: block;
+  }
+}
+html main .top .top-item img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
